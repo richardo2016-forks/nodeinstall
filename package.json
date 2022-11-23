@@ -3,6 +3,7 @@
   "version": "0.1.6",
   "description": "",
   "dependencies": {
+    "adm-zip": "^0.5.9",
     "bytes": "^2.5.0",
     "co": "^4.6.0",
     "commander": "^2.9.0",
@@ -38,6 +39,7 @@
     "contributor": "git-contributor",
     "start": "node index.js",
     "dev": "egg-bin dev",
+    "test:win32": "TESTS=test-win32/*.js egg-bin test",
     "test": "npm run lint && egg-bin test",
     "test-china": "NODEINSTALL_CHINA=true egg-bin test",
     "cov": "egg-bin cov",
